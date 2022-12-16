@@ -28,14 +28,15 @@
           packages = with pkgs; [
             myPython
             nodePackages.pyright # LSP
+            # jetbrains.pycharm-professional
           ];
 
           # Use $1 for positional args
           commands = [
             # {
-            #   name = "";
-            #   help = "";
-            #   command = "";
+            #   name = "ide";
+            #   help = "Run pycharm for this project";
+            #   command = "pycharm . &>/dev/null &";
             # }
           ];
         };
